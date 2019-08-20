@@ -1,18 +1,29 @@
-# Recursive Multi-model Deep Fusion for Robust Salient Object Detection
+# A Deeper Look at Salient Object Detection:
+#Two-stream Framework with a Small Training Dataset
 
 ## abstract
-Fully convolutional networks have shown outstanding performance in the image salient object detection field. The current main stream methods have a tendency to become deeper and more complicate, which easily homogenizes its deep features reaching the performance bottleneck. In sharp contrast to the conventional “deeper” strategy, we propose to design “wider” network architecture via constructing a novel parallel sub network framework to further improve the detection performance. To pursuit the feature diversity, our sub networks are designed with different network architectures, and we enforce each sub network to focus on different saliency perspectives via using independent saliency loss. Meanwhile, to handle the feature conflictions raised in parallel sub networks, we construct dense short-connections to enable a recursively interaction between sub networks, ensuring an optimalcomplementary status between multi-model deep features. Finally, all these complementary multi-model deep features are selectively fused to produce high quality saliency maps. Also, we have compared our method with 16 state-of-the-art methods over 8 datasets to demonstrate the superiority of our method. The source code and data is also public available Saliency maps of the paper " Multi-model Deep Fusion for Salient Object Detection ",can download at google dirve .
+In this paper, we attempt to reveal the nuance in the training strategy of salient object detection, including the choice of training datasets and the amount of training dataset that the model requires. Furthermore, we also expose the ground-truth bias of existing salient object detection benchmarks and their detrimental effect on performance scores. Based on our discoveries, we proposed a new two-stream framework that was trained on a small training dataset.  To effectively integrate features of different networks, we introduced a novel gate control mechanism for the fusion of two-stream networks that achieves consistent improvements over baseline fusion approaches. To preserves clear object boundaries, we also proposed a novel multi-layer attention module that utilizes high-level saliency activation maps to guide extract details information from low-level feature maps. Extensive experiment results demonstrate that our proposed model can more accurately highlight the salient objects with a small training dataset, and substantially improve the performance scores compared to the existing state-of-the-art saliency detection models.
+
+## Network architecture
+
+![fig1](./img/pipeline.png)
+
+
+##Requirements
+- Python 3.5
+-  OpenCV
+- PyTorch 0.4
 
 ### Visual comparison with previous start-of-the-arts
 
-![fig1](./image/sal_map.png)
+![fig1](./img/sal_maps.png)
 
 ## Usage
-Please install Caffe first. I think you may find a great number of tutorials talking about how to install it
+Clone, and cd into the repo directory. 
 
 
 	
-	git clone https://github.com/Diamond101010/MMDF.git
+	git clone git@github.com:Diamond101010/TSNet.git
 	
 Before you start, you also need our pretrained model.
  Then run
