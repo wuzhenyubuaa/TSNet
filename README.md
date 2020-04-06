@@ -20,6 +20,9 @@ In this paper, we attempt to reveal the nuance in the training strategy of salie
 ### PR and F-measure curves
 ![fig2](./img/pr.png)
 
+###  Comparison of quantitative results including the F-measure and MAE
+![fig2](./img/tab.png)
+
 ## Usage
 Clone, and cd into the repo directory. 
 
