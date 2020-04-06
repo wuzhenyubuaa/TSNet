@@ -17,6 +17,9 @@ In this paper, we attempt to reveal the nuance in the training strategy of salie
 
 ![fig1](./img/sal_maps.png)
 
+### PR and F-measure curves
+![fig2](./img/pr.png)
+
 ## Usage
 Clone, and cd into the repo directory. 
 
