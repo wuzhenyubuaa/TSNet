@@ -15,13 +15,13 @@ In this paper, we attempt to reveal the nuance in the training strategy of salie
 
 ### Visual comparison with previous start-of-the-arts
 
-![fig1](./img/sal_maps.png)
+![fig1](./img/sal_maps.jpg)
 
 ### PR and F-measure curves
-![fig2](./img/pr.png)
+![fig2](./img/pr.jpg)
 
 ###  Comparison of quantitative results including the F-measure and MAE
-![fig2](./img/tab.png)
+![fig2](./img/tab.jpg)
 
 ## Usage
 Clone, and cd into the repo directory. 
