@@ -36,7 +36,7 @@ Before you start, you also need our pretrained model.
 	 cd examles
 	 python demo.py
 	 
-## proposed [MD4K](https://drive.google.com/open?id=1OtUaN9WhTL5hqtBqJnUchnbTW5xvsNoc)
+
 
 ## Download
 
