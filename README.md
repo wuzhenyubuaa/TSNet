@@ -5,7 +5,7 @@ In this paper, we attempt to reveal the nuance in the training strategy of salie
 
 ## Network architecture
 
-![fig1](./img/pipeline.png)
+![fig1](./img/pipeline.jpg)
 
 
 ##Requirements
